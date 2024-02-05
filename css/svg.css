@@ -1,0 +1,166 @@
+.cross {
+    color: rgb(255, 184, 77);
+}
+
+.cross:hover {
+    color: blanchedalmond;
+}
+
+.burger_menu:hover {
+    color: rgb(195, 255, 152);
+}
+
+.burger_menu {
+    color: rgb(105, 179, 53);
+}
+
+.search:hover {
+    color: rgb(255, 241, 146);
+}
+
+.search {
+    color: rgb(180, 167, 106);
+}
+
+.home:hover {
+    color: rgb(226, 176, 192);
+}
+
+.home {
+    color: rgb(202, 103, 134);
+}
+
+.build {
+    fill: rgb(200, 190, 150);
+    filter: drop-shadow(10px 10px 10px rgb(67, 67, 67));
+    stroke: rgb(85, 75, 63);
+    stroke-width: 1;
+}
+
+.school {
+    fill: rgb(152, 140, 196);
+    filter: drop-shadow(10px 10px 10px rgb(67, 67, 67));
+    stroke: rgb(85, 75, 63);
+    stroke-width: 1;
+}
+
+.park {
+    stroke: rgb(200, 190, 150);
+}
+
+#point {
+    fill: rgb(170, 0, 0);
+}
+
+#shop {
+    fill: rgb(146, 130, 110);
+}
+
+#send {
+    fill: rgb(48, 91, 170);
+}
+
+#school {
+    fill: rgb(89, 76, 135);
+}
+
+#zoo {
+    fill: rgb(73, 117, 70);
+}
+
+#monument {
+    fill: rgb(69, 69, 69);
+}
+
+.map {
+    background-color: rgba(200, 190, 150, 0.626);
+}
+
+.way {
+    stroke: rgb(255, 248, 238);
+}
+
+.road {
+    fill: rgb(255, 248, 238);
+    stroke: rgb(67, 67, 67);
+    stroke-width: 0.3;
+}
+
+.text {
+    display: none;
+    fill: black;
+    font: bold 14px sans-serif;
+}
+
+.container_map {
+    display: flex;
+    justify-content: center;
+}
+
+
+.parallaks {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.car {
+
+    fill: rgb(255, 5, 5);
+
+}
+
+
+ .tree {
+    fill: rgba(32, 63, 32, 0.673);
+}
+
+#trolley {
+    fill: rgb(67, 139, 255);
+    transform: translateX(-40%);
+} 
+
+.second {
+    fill:rgba(38, 30, 22, 0.708);
+    position: absolute;
+    z-index: 2;
+}
+
+.third {
+    position: absolute;
+    z-index: 1; 
+    transform: scale(1.6);
+    fill:rgba(38, 30, 22, 0.532);
+    top: -55px;
+}
+
+.first {
+    stroke: black;
+    stroke-width: 2;
+    fill:rgb(38, 30, 22);
+    transform: scale(0.6);
+    position: absolute;
+    top: 30px;
+    z-index: 3;
+}
+  
+.house {
+    transform: scale(0.6);
+}
+
+#blur_third {
+    -webkit-filter: url("#newblur");
+	filter: url("../svg.html#newblur");
+}
+
+#blur_second {
+    -webkit-filter: url("#blur");
+	filter: url("../svg.html#blur");
+}
+
+.first > .tree {
+    fill:rgb(98, 175, 60)
+}

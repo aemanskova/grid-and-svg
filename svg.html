@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/svg.css">
+</head>
+
+<body>
+  <div class="container_map">
+    <svg width="1500" height="400" viewBox="0 0 1500 400">
+      <a class="cross" href="#/">
+        <use x="45%" href="#cross"></use>
+      </a>
+      <a class="burger_menu" href="#/">
+        <use x="45%" href="#burger_menu"></use>
+      </a>
+      <a class="search" href="#/">
+        <use x="45%" href="#search"></use>
+      </a>
+      <a class="home" href="#/">
+        <use x="45%" href="#home"></use>
+      </a>
+    </svg>
+  </div>
+
+  <div class="container_map">
+    <svg class="map" width="1000" height="600" viewBox="0 0 1000 600">
+      <path class="way" stroke-width="10" d="
+    M 250 160 l -80 330 m 40 -40 
+    l 30 -100 M 150 415 l 250 0 m 0 0 l 10 -100
+    m 0 0 l 0 -115 m -4 0 l 300 0
+    m -2 0 l 0 -10 m 0 10 l 300 0
+    M 700 430 l -160 0 m 0 0 
+    l -2 100 m 0 0 l 80 0 m 0 0 l 0 100
+    M 600 330 l -190 0 M 600 330
+    l 0 60 m 3 0 l -40 0 M 900 360 
+    l 100 0 M 810 160 l 0 -200
+    M 160 380 l -200 0
+
+    "></path>
+      <rect class="road" x="150" y="0" width="40" height="600"></rect>
+      <rect class="road" x="0" y="150" width="1000" height="40"></rect>
+      <polygon class="build" points="200,0 290,0 290,90 230,90 230,60 200,60 200,0" fill="currentColor"></polygon>
+      <rect class="build" x="300" y="20" width="500" height="60" fill="black"></rect>
+      <polygon class="build" points="820,0 980,0 980,30 930,30 930,50 980,50 980,90 820,90 820,0"></polygon>
+      <rect class="build" x="50" y="200" width="90" height="150" fill="black"></rect>
+      <polygon class="build" points="50,400 140,400 140,600 20,600 20,540 50,540"></polygon>
+      <polygon class="build" points="290,220 400,250 365,380  260,350"></polygon>
+      <polygon class="build" points="420,220 700,220 700,400 620,400 620,300 420,300"></polygon>
+      <polygon class="build" points="710,220 980,220 980,320 800,320 800,400, 710,400"></polygon>
+      <rect x="200" y="420" width="200" height="180" fill="green"></rect>
+      <rect class="school" x="720" y="420" width="300" height="180"></rect>
+      <polygon class="build" points="420,420 500,420 500,560 580,560 580,600 420,600"></polygon>
+      <path class="park" d="
+    M 200 420
+    l 40 100
+    m 0 0
+    l 40 40
+    m 0 0
+    l 0 -140
+    m 0 0
+    l 90 100
+    M 370 420
+    l 0 180
+    M 400 420 
+    l -30 100
+    m 0 0
+    l -170 80
+    m 90 0 
+    l 80 -35
+    M 200 520
+    l 170 0
+    " stroke-width="8"></path>
+      <g class="click" id="monument">
+        <circle cx="370" cy="510" r="10"></circle>
+        <rect x="355" y="515" rx="2" ry="2" width="30" height="10"></rect>
+      </g>
+      <text class="text" x="315" y="490">Памятный камень</text>
+      <use class="click" href="#point" x="280" y="480"></use>
+      <text class="text" x="220" y="460">Парк в восточном Дегунино</text>
+      <use class="click" href="#point" x="340" y="20"></use>
+      <text class="text" x="380" y="40">ул. 800-летия Москвы, 7 к.1</text>
+      <use class="click" href="#point" x="840" y="20"></use>
+      <text class="text" x="800" y="70">ул. 800-летия Москвы, 11</text>
+      <use class="click" href="#point" x="100" y="240"></use>
+      <text class="text" x="30" y="230">ул. 800-летия Москвы, 22, к2</text>
+      <use class="click" href="#point" x="100" y="400"></use>
+      <text class="text" x="80" y="380">ул. Дубнинская, 71, к1</text>
+      <use class="click" href="#point" x="300" y="300"></use>
+      <text class="text" x="270" y="290">ул. 800-летия Москвы, 24</text>
+      <use class="click" href="#point" x="450" y="240"></use>
+      <text class="text" x="450" y="230">ул. 800-летия Москвы, 28, к1</text>
+      <use class="click" href="#point" x="750" y="240"></use>
+      <text class="text" x="750" y="230">ул. 800-летия Москвы, 30</text>
+      <use class="click" href="#point" x="780" y="440"></use>
+      <text class="text" x="780" y="420">ул. 800-летия Москвы, 28 к.3</text>
+      <use class="click" href="#shop" x="290" y="240"></use>
+      <text class="text" x="290" y="240">Пятёрочка</text>
+      <use class="click" href="#shop" x="90" y="300"></use>
+      <text class="text" x="90" y="300">Вкусвилл</text>
+      <use class="click" href="#shop" x="430" y="450"></use>
+      <text class="text" x="430" y="450">Продовольственный магазин "Париет"</text>
+      <use class="click" href="#point" x="430" y="510"></use>
+      <text class="text" x="420" y="570">ул. 800-летия Москвы, 26, к2</text>
+      <use class="click" href="#shop" x="930" y="240"></use>
+      <text class="text" x="830" y="240">Продуктовый магазин</text>
+      <use class="click" href="#zoo" x="30" y="580"></use>
+      <text class="text" x="30" y="580">Зоомагазин</text>
+      <use class="click" href="#send" x="220" y="20"></use>
+      <text class="text" x="200" y="15">Отделение почты</text>
+      <use class="click" href="#pizza" x="20" y="400"></use>
+      <text class="text" x="20" y="480">Domino's pizza</text>
+      <use class="click" href="#school" x="790" y="400"></use>
+      <text class="text" x="820" y="570">Школа №1296</text>
+
+      <use href="#traffic_lights" x="155" y="140"></use>
+    </svg>
+  </div>
+  <div class="parallaks">
+    <svg class="third" width="1000" height="150">
+      <defs>
+        <filter id="newblur">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+        </filter>
+        <g id="blur_third" width="1000">
+          <use class="city" href="#city"></use>
+          <use class="city" x="80" href="#city"></use>
+          <use class="tree" x="200" href="#tree"></use>
+          <use class="tree" x="300" href="#tree"></use>
+          <use class="tree" x="350" href="#tree"></use>
+          <use class="bank" x="400" href="#bank"></use>
+          <use class="city" x="600" href="#city"></use>
+          <use class="tree" x="700" href="#tree"></use>
+          <use class="tree" x="800" href="#tree"></use>
+          <use x="850" href="#bell"></use>
+          <use class="city" x="950" href="#city"></use>
+          <use x="1500" y="99" class="house" href="#house"></use>
+        </g>
+      </defs>
+      <use href="#blur_third">
+        <animate attributeName="x" values="-1000; 0" dur="6s" repeatCount="indefinite" />
+      </use>
+      <use href="#blur_third">
+        <animate attributeName="x" values="0; 1000" dur="6s" repeatCount="indefinite" />
+      </use>
+    </svg>
+    <svg class="second" width="1600" height="150" viewBox="0 0 1600 150">
+      <defs>
+        <filter id="blur">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+        </filter>
+      </defs>
+      <defs>
+        <g id="blur_second" width="1600">
+          <use class="city" href="#city"></use>
+          <use class="city" x="80" href="#city"></use>
+          <use class="tree" x="125" href="#tree"></use>
+          <use class="tree" x="240" href="#tree"></use>
+          <use class="tree" x="280" href="#tree"></use>
+          <use class="bank" x="180" href="#bank"></use>
+          <use class="city" x="350" href="#city"></use>
+          <use class="tree" x="410" href="#tree"></use>
+          <use class="tree" x="550" href="#tree"></use>
+          <use x="460" href="#bell"></use>
+          <use x="900" y="99" class="house" href="#house"></use>
+          <use class="city" x="620" href="#city"></use>
+        </g>
+      </defs>
+      <use href="#blur_second">
+        <animate attributeName="x" values="-1600; 0" dur="4s" repeatCount="indefinite" />
+      </use>
+      <use href="#blur_second">
+        <animate attributeName="x" values="0; 1600" dur="4s" repeatCount="indefinite" />
+      </use>
+    </svg>
+    <svg class="first" width="2600" height="150" viewBox="0 0 2600 150">
+      <defs>
+        <g id="first" width="2600">
+          <use class="car" x="0" href="#car"></use>
+          <use class="tree" x="40" href="#tree"></use>
+          <use class="tree" x="140" href="#tree"></use>
+          <use class="tree" x="230" href="#tree"></use>
+          <use class="trolley" x="100" href="#trolley"></use>
+        </g>
+      </defs>
+      <use href="#first">
+        <animate attributeName="x" values="0; 2600" dur="3s" repeatCount="indefinite" />
+      </use>
+      <use href="#first">
+        <animate attributeName="x" values="-2600; 0" dur="3s" repeatCount="indefinite" />
+      </use>
+      <use href="#first">
+        <animate attributeName="x" values="-2600; 2600" dur="3s" repeatCount="indefinite" />
+      </use>
+    </svg>
+  </div>
+  <svg>
+    <symbol>
+      <path id="cross" d="
+      M 10 10
+      l 20 20
+      M 30 10
+      l -20 20" stroke-width="4" stroke="currentColor" stroke-linecap="round" />
+      <path id="burger_menu" d="
+      M 10 50
+      l 110 0
+      M 10 80
+      l 110 0
+      M 10 110
+      l 110 0" stroke-width="10" stroke="currentColor" stroke-linecap="round">
+        <animate attributeName="d" begin="click" dur="1s" to="M 30 50
+      l 50 60
+      M 80 50
+      l -50 60"></animate>
+      </path>
+      <g id="search" stroke="currentColor">
+        <circle cx="40" cy="160" r="30" fill="none" stroke-width="12"></circle>
+        <line x1="68" y1="170" x2="120" y2="200" stroke-width="8" stroke-linecap="round"></line>
+      </g>
+      <g id="home">
+        <polygon points="60,230 30,260 90,260" fill="currentColor">
+        </polygon>
+        <rect x="40" y="260" width="40" rx="2" ry="2" height="30" fill="none" stroke="currentColor" stroke-width="10">
+        </rect>
+      </g>
+      <g id="point">
+        <path d="M0 0 Q 15 -20 30 0" />
+        <polygon points="0,0 30,0 15,50"></polygon>
+        <circle cx="15" cy="7" r="9.5" fill="white"></circle>
+      </g>
+      <g id="shop">
+        <rect x="10" y="10" width="30" height="20" rx="2" ry="2"></rect>
+        <circle cx="15" cy="35" r="5"></circle>
+        <circle cx="35" cy="35" r="5"></circle>
+        <path d="M-2 0 Q 8 -5 15 15" fill="none" stroke="rgb(146, 130, 110)" stroke-width="3" />
+      </g>
+      <g id="zoo">
+        <path d="M0 0 Q 17 -35 34 0" />
+        <circle cx="8" cy="4" r="10"></circle>
+        <circle cx="26" cy="4" r="10"></circle>
+        <circle cx="0" cy="-10" r="4"></circle>
+        <circle cx="5" cy="-18" r="4"></circle>
+        <circle cx="16" cy="-23" r="4"></circle>
+        <circle cx="28" cy="-18" r="4"></circle>
+        <circle cx="34" cy="-10" r="4"></circle>
+      </g>
+      <g id="send">
+        <rect x="0" y="0" width="50" height="30"></rect>
+        <polygon points="0,0 25,20 49.7,0" fill="white" stroke="rgb(48, 91, 170)" stroke-width="0.3"></polygon>
+      </g>
+      <path id="pizza" fill="rgb(146, 130, 110)"
+        d="M70.05,124.77c-10.66-1.3-8.31-16.46,1.7-15.23S79.79,126,70.05,124.77Zm-32.56,9.39c1.22-4.22,2.63-9.93,6.63-11.32C55.39,104.24,83,59.75,83,59.75l5.68,1.14s4.59,17.65,9.27,35.18l-7.14-.71C87.29,82,84.22,70.3,84.22,70.3L78.1,80.45c9.31,8.56-.31,25.53-12.66,21-5.29,8.79-10.34,17.19-13.06,21.73,8.72,8.21,38.57,11.5,47.11,6.06-.42-1.69-1-3.86-1.6-6.34a11.55,11.55,0,0,1-4.73.36c-15.82-1.94-12.32-24.42,2.52-22.6,9.56,1.17,11.73,11,8.17,17.35,1.45,5.2,2.63,9.28,3.29,11.26,5,2.86,4.8,11.27,5.37,13.61C96.31,153.35,54,149.24,37.49,134.16Z" />
+      <path id="school"
+        d="M103.77,79.33l13.32,25-84.18,1L45.85,79.6l15.29-.07L71.68,68.47,71,46.57l6.18-.81-.07,6.05,10.26-.67,0,4.46,13,3.37L85.11,66.7l-.41-4.09L77,63.44l0,5.28L88.17,79.4ZM74.28,75.62,53.35,98.56l44.09,0Zm.39,19.86c-8.09,0-7.73-11.53-.13-11.53S82.07,95.48,74.67,95.48ZM39,110l72.54.82-.38,27.71,5.27-.1-.5,8.59H34.09v-7l4.89-.1Zm64.43,21.5V120.36l-13.28-.07L90.46,132Zm-21.8,7.6.55-18.85-14.57-.08.58,19.18Zm-21.8-7.6V120.12l-11.54-.06L48.6,132Z" />
+      <g id="traffic_lights">
+        <rect x="0" y="0" rx="10" ry="10" width="30" height="80"></rect>
+        <circle cx="15" cy="15" r="10" fill="red"></circle>
+        <circle cx="15" cy="40" r="10" fill="yellow"></circle>
+        <circle cx="15" cy="65" r="10" fill="green"></circle>
+      </g>
+      <path id="house"
+        d="M118.92,96.69l-5,6.57-39-29.19L36.36,103.59,31.08,97,74.9,61.52l17.51,14L93,65.33l13.78.53-.33,20.88ZM44,104.44,75.23,80.77,107,104l-.82,32.55,8.81-.19L114.55,147H36.64v-9l7.92-.17ZM53,123.27l21.36-.5V112l-21.78-.17Zm44.81-11.12L83.16,112l.63,25,13.38-.28Z">
+      </path>
+      <path id="trolley"
+        d="M112.08,111.36l10.52,8.24,9.81-.17-.89,15.73-10,2.13c-.24-7.32-5.17-14.63-14.77-14.63s-14.72,7.61-14.57,15.08H62c0-7.47-5-15.08-14.77-15.08-9.15,0-14.23,6.91-14.55,14l-11.91-1.06s-.58-23.7-.58-35c0-7.11.68-10.78,7.69-10.8,16.34-.06,68.14-.64,84.87-.64,6.34,0,8.34.62,10.8,4.5.48.75,1.13,2,1.88,3.51l-14,0ZM27.72,96.88l.64,16,77-1.72-.87-14Zm27.91-14.5,7.07-1.52L18.22,66.13l2.67-6.42L75.21,78.15,85.11,76l4.74,8.82-34,1.09ZM47.25,126.3c14.41,0,14.77,22,1,22C31.92,148.34,33.12,126.3,47.25,126.3Zm.46,15.61c5.74,0,5.59-9.18-.42-9.18S40.9,141.91,47.71,141.91Zm59.13-15.61c14.41,0,14.77,22,1,22C91.51,148.34,92.71,126.3,106.84,126.3Zm.46,15.61c5.74,0,5.59-9.18-.42-9.18S100.49,141.91,107.3,141.91Z">
+      </path>
+      <path id="car"
+        d="M127.1,137.83c.44-8.53-4.92-17.64-16.07-17.64-12.14,0-17.72,11.26-15.33,20.45l-42.29-.27c1.77-9.14-3.49-20.18-15.75-20.18-10.6,0-16.19,8.56-15.86,16.85L11,135.88,10.43,128l4.29-1.21v-9.13L37.66,93.76l45.86-.19,18.65,18.26,31.77,5.66.47,9.4,3.83.48-.06,5.27S135.11,137.68,127.1,137.83ZM57.93,100l-13.24.14-4.35,8,2.29,4L58,112Zm23.31-.24-17.4.18,1.82,12L92,111.65ZM37.7,124.18c15.68,0,16.08,24.15,1.09,24.15C21,148.33,22.32,124.18,37.7,124.18Zm.5,17.11c6.24,0,6.08-10.06-.45-10.06S30.79,141.29,38.2,141.29Zm72.88-17.11c15.68,0,16.07,24.15,1.09,24.15C94.39,148.33,95.7,124.18,111.08,124.18Zm.5,17.11c6.24,0,6.08-10.06-.46-10.06S104.17,141.29,111.58,141.29Z">
+      </path>
+      <path id="voltage_line"
+        d="M121.46,147.32l-5.28.08-1.48-7.49-3.32.05-1.79,7.39-5.34,0,1.68-8.74-9.73-7.32.64-1.36,10.74.14.9-4.66-8-5,.46-1.27,8.76.06,1.82-9.42,2.42.28,1.86,9.18,9.23.07.37,1.25-8.3,5.08.92,4.55,11.09.14.5,1.35-9.88,7ZM89.4,147l-6.52.51,0-.11-18-19-18,19.07v0h0L39.7,147,47,108.91,16.46,90.09l1.85-2.37L51,88.14l1.57-8.09L28,65.49l1.33-2.26,26.49.18,4.79-24.86,7,.81,4.9,24.16,27.12.18,1,1.69L76,80.7l1.57,7.79,33.83.44,1.45,2.34L81.7,109ZM72.3,110.44l-14.81.2,7.35,7.9ZM35.38,94.51l12.93,7.79,1.47-7.58Zm13.86,41,11-12-7.19-7.6ZM45.83,68.91l8,4.79.91-4.7Zm20.75.21-4.3-.05L61,75.82l7,.05Zm2.71,13-9.57,0-1.21,6.16,12.08.16ZM72,95.06l-14.76-.22-1.76,9,18.33,0ZM82.53,69.27l-8.89-.08,1,4.92Zm-6.15,46.94-6.91,7.32,10.85,11.65ZM93.27,95.38l-14.36-.22,1.46,7.21Z">
+      </path>
+      <path id="church"
+        d="M33.88,147.09l-.78-29.9L45.26,105l11.61-.18V86.35L71.14,72.73,71,68.46l-7.21-.12-.72-5.09,7.77-.43-.22-7.64,6.18-1.44.11,8.74,7.59-.42v6.63L77,68.56l0,4.2L91.52,86l-.27,18.3,11.94-.19,12.38,13.09-.4,30.3ZM44.74,122.4l11.54,0C55.31,115.12,45.68,115.13,44.74,122.4Zm11.62,6.37-11.7.06v7.64l11.7-.24ZM68.68,90.9l11.52-.14C79.14,83.66,69.64,83.71,68.68,90.9Zm11.63,6.21-11.71.21v7.34l11.71-.19Zm-11.62,25.2,11.52,0C79.18,115.15,69.69,115.16,68.69,122.31Zm11.62,6.34-11.71.06V136l11.71-.25Zm11.86-6.42,11.49,0C102.58,115.17,93.22,115.19,92.17,122.23Zm11.6,6.29-11.7.06v6.89l11.7-.24Z">
+      </path>
+      <path id="bell"
+        d="M101.27,139.54l0,8.06L49,147.32l-.24-6.41,7.25-.19L55.83,116,51,111.82l10.38-10L61.46,80l-3.38-2.44L67,69.36c-1.79-1.42-5.48-4.79-5.49-8.37,0-6.26,7.1-10.62,10.19-14.69l.16-6.16-7.21.1L65,33.92l7,.1.2-7.55,5.36.53.14,7.11,6.78.1V40l-6.65.09.13,6.47c2.93,3.93,10.68,8.11,10.72,14.76,0,3.26-3.5,6.29-5.44,7.71l9.38,8.5-3.87,3v20.78l11,10.21-5.27,4,.28,24.23ZM79.33,86.94c0-7-8.15-7-8.18,0V104.4h8.19S79.34,87,79.33,86.94Zm1.48,37.45c0-9.59-11.09-9.58-11.13,0v16l11.13-.29Z">
+      </path>
+      <path id="works"
+        d="M19.7,110.82h8.9l.91-18.6,13.65.13,1.16,18.47H81.58l1-23.31,13.48.13,1.29,23.18h9.25l.91-18.6,13.65.13,1.16,18.47h6.78v36.37l-108.6-.26Zm98,9.76-13.38.08-.22,5,13.6-.15Zm0,16.38v-4.43l-13.91-.15-.2,4.63ZM69.56,120.88,56.11,121l-.23,5.2L69.79,126Zm23.71-.15-12.69.08-.23,5.08,13.14-.14ZM94,137l-.21-4.77-13.71-.15-.22,5Zm-23.71.07-.23-5.1-14.43-.15-.24,5.29Zm-38.63.12,14.06,0-.24-5.43-13.91-.16Zm-.18-10.8,13.76-.15L45,121l-13.61.08Zm76.62-46.19,12.29-.36.43,6.84-13,.12Zm.82-16.75,10.38-.82.77,12.17-11.7-.11Zm-25.81,12,12.26-.35L95.74,82l-12.92.12Zm.81-18.79,10.38-.81.79,14.21L83.34,70ZM30.09,80.24l12.29-.36.43,6.84-13,.12Zm.82-16.75,10.38-.82.77,12.17-11.7-.11Z" />
+      <path id="bank"
+        d="M29.3,135.65l8.89-.19,1-31.31-5.89-6.74L57,97.62l-4.08,6.53,2.9,30.94,11-.23,1.86-30.71-5.56-6.48,24.21.21-4.87,6.27L85,134.47l12.31-.26.91-30.06-5.33-6.22,23.41.21-4.3,6,2.62,29.7,8.21-.17v12.79l-91.55,1Zm0-42.33-1-5.9L73.6,60.84l48.23,24.61-1,6.89ZM74,72.65c-8.21,0-8.91,12.8.58,12.8C82.61,85.45,82.4,72.65,74,72.65Z" />
+      <path id="tree"
+        d="M84.4,134.07l.25-6c14-.61,20.81-7.91,20.81-20.24C105.46,92.9,93.1,88,85,89.74,86,86.82,90.17,65,72.29,65,55,65,58.68,82.59,59.33,86,46.41,86,44,97.43,44,102.85c0,7.22,6.26,14.85,19.48,14.85v6.17c-31.91,0-33.19-36.26-11.75-43.35C49.78,67,59.06,57.81,72.23,57.81c12,0,21.64,8.92,20.31,24.79C122.49,87.77,118.5,135.7,84.4,134.07ZM55.9,98.79l1.42-4.28,12.22,6.79.52-17.91,6.64-1.22,1.77,27.2,14.86-9.51,2.49,4.63L79.26,121.36l1.69,26-12.73-.62,1-33.47Z" />
+      <path id="city"
+        d="M90,146.23V121l-9,.3-.19-40.6-18.44.2L62.24,99.6l-10.1.42.08,22.24-9.08.3.63,23.49L32.51,146V87.39L40.44,87,40,67.4,57.4,62.53l.18-13.24,30.51-7.37.5,32.66,11.52-.07,0,13.36,17.14,5.45.21,53ZM55.43,73.48l-6.21.29L50,82.33l5.46-.58ZM80.25,54.13l-6.21.3L74.79,63l5.46-.58Zm18,49.74-6.81.1.75,8.56,6.06-.19Zm12.36-.19-6.19.1.23,8.36,6-.19Zm.06,17.08-6.21.3.75,8.55,5.46-.58Zm-56.09,8.09.37,8.36-6,0,.13-8.45Zm11.09.26,0,8.15-6.27,0,.21-8.26Zm9.24-26.37,0,8.91-6.28-.12.14-9ZM69,87.94l6,0,0,8.23-6.09.46ZM82.07,146.2l-9.62,0-.32-11.46,10-.08Z" />
+    </symbol>
+
+  </svg>
+
+
+  <script src="../grid-and-svg-aemanskova/svg.js"></script>
+</body>
+
+</html>
